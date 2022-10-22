@@ -5,21 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestione Appuntamenti</title>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@2.33.0/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Gestione Note 1.0</h2>
-    <input type="text" id="edtNota">
-    <button id="btnAdd">Aggiungi</button>
-    <button id="btnClear">Cancella Lista</button>
-    <input type="date" id="addDate">
-    <br>
-    <ul id="listaTask">
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
+    <div class="banner">
+        <div class="content">
+            <center>
+                <h1>Gestione Note 1.0</h1>
+                <br>
+                <div class="inputBox">
+                    <input type="text" id="edtNota" required="required">
+                    <span>Cosa vuoi fare?</span>
+                </div>
+                <div>
+                    <button id="btnAdd"><span id="btnSpn1"></span>Aggiungi</button>
+                    <button id="btnClear"><span id="btnSpn"></span>Cancella Lista</button>
+                    <input type="date" id="addDate"/>
+                </div>
+                <br>
+            <ul id="listaTask">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            </center>
+        </div>
+    </div>
 <script src="main.js"></script>
 </body>
 </html>

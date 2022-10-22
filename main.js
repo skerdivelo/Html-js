@@ -28,13 +28,14 @@ function AddToList(text, append = true){
         ulTag.prepend(elementToAdd);
     }
 }
+
 //eventi
 btnAdd.onclick = event=>{
     let testo = edtNota.value;
     let text = addDate.value;
     AddToList(text +" "+ testo);
     edtNota.value = "" //pulisco testo
-    edtNota.focus() //riposiziono cursore 
+    edtNota.focus() //riposiziono cursore
     localStorage.setItem("Lista", ulTag.innerHTML)
 }
 
